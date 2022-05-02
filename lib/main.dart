@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:martinezrodriguez/gridviewarticulos.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Opticas2020App());
 }
 
-class MyApp extends StatelessWidget {
+class Opticas2020App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,6 +14,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ), //tema color global
-        home: const MyHomePage());
+        home: const PaginaInicial());
   }
 } //widget sin estado

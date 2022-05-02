@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class PaginaInicial extends StatefulWidget {
+  const PaginaInicial({Key? key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _PaginaInicialState createState() => _PaginaInicialState();
 } //widget con estado
 
-class _MyHomePageState extends State<MyHomePage> {
+class _PaginaInicialState extends State<PaginaInicial> {
   List<String> images = [
     "assets/images/servicios-de-optometria-en-fuenlabrada.jpg",
     "assets/images/lentes.jpg",
@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Opticas 2020"),
+          title: const Text("Listado de articulos"),
         ),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
